@@ -1,0 +1,20 @@
+{
+    "project_name":       "bootloader",
+    "project_path":       "/home/breno/Github/Learning/EspIdf/esp-idf/components/bootloader/subproject",
+    "build_dir":          "/home/breno/Github/Learning/EspIdf/controller_hci_uart/build/bootloader",
+    "config_file":        "/home/breno/Github/Learning/EspIdf/controller_hci_uart/sdkconfig",
+    "config_defaults":    "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
+    "git_revision":       "v4.2-dev-1660-g7d7521367",
+    "target":             "esp32",
+    "phy_data_partition": "",
+    "monitor_baud" :      "115200",
+    "monitor_toolprefix": "xtensa-esp32-elf-",
+    "config_environment" : {
+        "COMPONENT_KCONFIGS" : "/home/breno/Github/Learning/EspIdf/esp-idf/components/efuse/Kconfig;/home/breno/Github/Learning/EspIdf/esp-idf/components/esp32/Kconfig;/home/breno/Github/Learning/EspIdf/esp-idf/components/esp_common/Kconfig;/home/breno/Github/Learning/EspIdf/esp-idf/components/log/Kconfig;/home/breno/Github/Learning/EspIdf/esp-idf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "/home/breno/Github/Learning/EspIdf/esp-idf/components/bootloader/Kconfig.projbuild;/home/breno/Github/Learning/EspIdf/esp-idf/components/esptool_py/Kconfig.projbuild;/home/breno/Github/Learning/EspIdf/esp-idf/components/partition_table/Kconfig.projbuild"
+    },
+    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp32", "esp_common", "esp_rom", "esptool_py", "log", "main", "micro-ecc", "partition_table", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "/home/breno/Github/Learning/EspIdf/esp-idf/components/bootloader", "/home/breno/Github/Learning/EspIdf/esp-idf/components/bootloader_support", "/home/breno/Github/Learning/EspIdf/esp-idf/components/efuse", "/home/breno/Github/Learning/EspIdf/esp-idf/components/esp32", "/home/breno/Github/Learning/EspIdf/esp-idf/components/esp_common", "/home/breno/Github/Learning/EspIdf/esp-idf/components/esp_rom", "/home/breno/Github/Learning/EspIdf/esp-idf/components/esptool_py", "/home/breno/Github/Learning/EspIdf/esp-idf/components/log", "/home/breno/Github/Learning/EspIdf/esp-idf/components/bootloader/subproject/main", "/home/breno/Github/Learning/EspIdf/esp-idf/components/bootloader/subproject/components/micro-ecc", "/home/breno/Github/Learning/EspIdf/esp-idf/components/partition_table", "/home/breno/Github/Learning/EspIdf/esp-idf/components/soc", "/home/breno/Github/Learning/EspIdf/esp-idf/components/spi_flash", "/home/breno/Github/Learning/EspIdf/esp-idf/components/xtensa", "" ]
+}

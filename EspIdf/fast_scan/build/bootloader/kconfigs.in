@@ -1,0 +1,5 @@
+source "/home/breno/Github/Learning/EspIdf/esp-idf/components/efuse/Kconfig"
+source "/home/breno/Github/Learning/EspIdf/esp-idf/components/esp32/Kconfig"
+source "/home/breno/Github/Learning/EspIdf/esp-idf/components/esp_common/Kconfig"
+source "/home/breno/Github/Learning/EspIdf/esp-idf/components/log/Kconfig"
+source "/home/breno/Github/Learning/EspIdf/esp-idf/components/spi_flash/Kconfig"
