@@ -429,3 +429,98 @@ make[1]: Leaving directory '/home/breno/Github/Learning/Cmake/basicProject/build
     Feature record: CXX_FEATURE:0cxx_variable_templates
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8af31/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8af31.dir/build.make CMakeFiles/cmTC_8af31.dir/build
+make[1]: Entering directory '/home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8af31.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_8af31.dir/CheckIncludeFile.cxx.o -c /home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_8af31
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8af31.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_8af31.dir/CheckIncludeFile.cxx.o  -o cmTC_8af31 
+make[1]: Leaving directory '/home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dc3c1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dc3c1.dir/build.make CMakeFiles/cmTC_dc3c1.dir/build
+make[1]: Entering directory '/home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dc3c1.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_dc3c1.dir/CheckIncludeFile.cxx.o -c /home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_dc3c1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc3c1.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_dc3c1.dir/CheckIncludeFile.cxx.o  -o cmTC_dc3c1 
+make[1]: Leaving directory '/home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_122bb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_122bb.dir/build.make CMakeFiles/cmTC_122bb.dir/build
+make[1]: Entering directory '/home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_122bb.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_122bb.dir/CheckIncludeFile.cxx.o -c /home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_122bb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_122bb.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_122bb.dir/CheckIncludeFile.cxx.o  -o cmTC_122bb 
+make[1]: Leaving directory '/home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_23d4d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_23d4d.dir/build.make CMakeFiles/cmTC_23d4d.dir/build
+make[1]: Entering directory '/home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_23d4d.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_23d4d.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.cpp.o -c /home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.cpp
+Linking CXX executable cmTC_23d4d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23d4d.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_23d4d.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.cpp.o  -o cmTC_23d4d 
+make[1]: Leaving directory '/home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_09da5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_09da5.dir/build.make CMakeFiles/cmTC_09da5.dir/build
+make[1]: Entering directory '/home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_09da5.dir/TestEndianess.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_09da5.dir/TestEndianess.cpp.o -c /home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/CMakeTmp/TestEndianess.cpp
+Linking CXX executable cmTC_09da5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09da5.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_09da5.dir/TestEndianess.cpp.o  -o cmTC_09da5 
+make[1]: Leaving directory '/home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+

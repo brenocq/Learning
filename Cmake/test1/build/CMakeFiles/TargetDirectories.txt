@@ -1,0 +1,3 @@
+/home/breno/Github/Learning/Cmake/test1/build/CMakeFiles/rebuild_cache.dir
+/home/breno/Github/Learning/Cmake/test1/build/CMakeFiles/edit_cache.dir
+/home/breno/Github/Learning/Cmake/test1/build/CMakeFiles/Tutorial.dir

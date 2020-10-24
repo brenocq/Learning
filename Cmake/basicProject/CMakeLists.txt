@@ -1,12 +1,18 @@
-cmake_minimum_required(VERSION 3.2)
+cmake_minimum_required(VERSION 3.4)
 
 # set the project name
 project(MyProject VERSION 0.0.0 LANGUAGES CXX)
+
+# Define 11 as minimum
+set(CMAKE_CXX_STANDARD			11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS		ON)
 
 set(test oqu)
 set(oque "hahaha")
 message(STATUS "Wow, this project is very good, uhn? ${${test}e}")
 message(STATUS "Using semantic versioning - https://semver.org/")
+#message(STATUS "${CMAKE_CXX_COMPILE_FEATURES}")
 
 # cmake -D myVar=test .
 variable_watch(myVar)
@@ -28,6 +34,19 @@ elseif(APPLE)
 elseif(WIN32)
 	message(STATUS "Win being used")
 endif()
+
+# Set executable output location
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${MyProject_SOURCE_DIR}/bin)
+
+add_subdirectory(src)
+
+# add the executable
+add_executable(
+	program
+	#EXCLUDE_FROM_ALL 
+	src/main.cpp)
+target_link_libraries(program PRIVATE maths)
+
 
 ####################### LOOOOPS ####################### 
 message("---------- Loops ----------")
@@ -100,16 +119,81 @@ function(test_parsing)
 endfunction()
 
 test_parsing(DIR_NAME folder SRCS test.cpp main.cpp IMGS 1.png 2.jpg COOL_STUFF) 
+####################### Properties ####################### 
+message("---------- Properties ----------")
+get_cmake_property(res VARIABLES)
+#message(${res})
+
+# Property to directory
+
+# Property to target
+set_target_properties(program PROPERTIES testing1 haha) 
+get_target_property(ress program testing1)
+message(${ress})
+
+####################### Generator ####################### 
+message("---------- Generator expression ----------")
+
+set(test $<CONFIG>)
+message(STATUS ${test})
+message(??)
+
+####################### Modules ####################### 
+message("---------- Modules ----------")
+
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
+include(coolModule)
+include(myModule)
+
+set(x oi)
+set(y oi)
+include(CMakePrintHelpers)
+cmake_print_variables(x y CMAKE_VERSION)
+
+include(TestBigEndian)
+test_big_endian(isBigEndian)
+message("Target system big endian: ${isBigEndian}")
+
+####################### Policies ####################### 
+message("---------- Policies ----------")
+
+# Allow non-existent target with get_target_property
+cmake_policy(SET CMP0045 OLD)
+# Would halt an error without the policy change
+get_target_property(outVar doesNotExist COMPILE_DEFINITIONS)
+
+####################### Build type ####################### 
+message("---------- Build type ----------")
+
+# Should use generators instead
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+	#cmake -DCMAKE_BUILD_TYPE:STRING=Debug ..
+	message("Building with Debug")
+elseif(CMAKE_BUILD_TYPE STREQUAL "Release")
+	#cmake -DCMAKE_BUILD_TYPE:STRING=Release ..
+	message("Building with Release")
+endif()
+
+message("Config types: ${CMAKE_CONFIGURATION_TYPES}")
+
+####################### Compiler and Linker ####################### 
+message("---------- Build type ----------")
+
+# Add definition to all targets created in this directory
+# Uncomment to create an error
+#add_definitions(-DSUM_H)
+
+#------------- C++ compile flags ---------------#
+# Appending flags when compiling to CXX (It creates a variable from the cache and append)
+#string(APPEND CMAKE_CXX_FLAGS " -Wall")
+#string(APPEND CMAKE_CXX_FLAGS " -Wsign-compare")
+#string(APPEND CMAKE_CXX_FLAGS " -Werror=unused-variable -Werror=sign-compare")
+
+# Another way
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
+
+# Things will be built with the flags stored when this file ends
 
 message("---------- End ----------")
-# Set executable output location
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${MyProject_SOURCE_DIR}/bin)
 
-add_subdirectory(src)
 
-# add the executable
-add_executable(
-	program
-	#EXCLUDE_FROM_ALL 
-	src/main.cpp)
-target_link_libraries(program PRIVATE maths)

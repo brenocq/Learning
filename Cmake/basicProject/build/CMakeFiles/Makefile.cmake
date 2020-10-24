@@ -10,12 +10,15 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../CMakeLists.txt"
   "CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.10.2/CMakeSystem.cmake"
+  "../cmake/coolModule.cmake"
+  "../cmake/myModule.cmake"
   "../src/CMakeLists.txt"
   "/usr/share/cmake-3.10/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeGenericSystem.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeParseArguments.cmake"
+  "/usr/share/cmake-3.10/Modules/CMakePrintHelpers.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake"
   "/usr/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
@@ -25,6 +28,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.10/Modules/Platform/Linux-GNU.cmake"
   "/usr/share/cmake-3.10/Modules/Platform/Linux.cmake"
   "/usr/share/cmake-3.10/Modules/Platform/UnixPaths.cmake"
+  "/usr/share/cmake-3.10/Modules/TestBigEndian.cmake"
   )
 
 # The corresponding makefile is:
