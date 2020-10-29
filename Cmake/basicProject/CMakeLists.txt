@@ -194,6 +194,30 @@ message("---------- Build type ----------")
 
 # Things will be built with the flags stored when this file ends
 
+####################### Custom Targets ####################### 
+message("---------- Custom Targets ----------")
+add_custom_target(bar ALL)
+add_custom_command(
+	TARGET   bar
+	COMMAND  echo Hello World!
+  	COMMAND  echo oi!
+  	COMMAND  cat run.sh
+  	COMMAND  echo ${PROJECT_SOURCE_DIR}
+  	WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+)
+
+# Run on binary
+add_custom_command(
+	TARGET   bar
+	COMMAND  touch testing-output.txt
+)
+
+# Run on binary without target
+add_custom_command(
+	OUTPUT   bar
+	COMMAND  touch testing-output.txt
+)
+
 message("---------- End ----------")
 
 

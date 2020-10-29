@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmaths.a  CMakeFiles/maths.dir/math/sum.cpp.o
-/usr/bin/ranlib libmaths.a

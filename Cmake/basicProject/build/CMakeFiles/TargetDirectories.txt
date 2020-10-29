@@ -1,6 +1,0 @@
-/home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/rebuild_cache.dir
-/home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/edit_cache.dir
-/home/breno/Github/Learning/Cmake/basicProject/build/CMakeFiles/program.dir
-/home/breno/Github/Learning/Cmake/basicProject/build/src/CMakeFiles/rebuild_cache.dir
-/home/breno/Github/Learning/Cmake/basicProject/build/src/CMakeFiles/edit_cache.dir
-/home/breno/Github/Learning/Cmake/basicProject/build/src/CMakeFiles/maths.dir
