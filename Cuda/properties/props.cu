@@ -21,9 +21,10 @@ int main()
 		printf("  - Warp size: %d\n", devProp.warpSize);
 		printf("  - Regs/block: %d\n", devProp.regsPerBlock);
 		printf("  - Regs/SM: %d\n", devProp.regsPerMultiprocessor);
-		printf("  - Shared mem/Block: %d kB\n", devProp.sharedMemPerBlock/1024);
-		printf("  - Shared mem/SM: %d kB\n", devProp.sharedMemPerMultiprocessor/1024);
-		printf("  - Constant mem: %d kB\n", devProp.totalConstMem/1024);
+		printf("  - Shared mem/Block: %d KB\n", devProp.sharedMemPerBlock/1024);
+		printf("  - Shared mem/SM: %d KB\n", devProp.sharedMemPerMultiprocessor/1024);
+		printf("  - Constant mem: %d KB\n", devProp.totalConstMem/1024);
+		printf("  - Cache L2: %d MB\n", devProp.l2CacheSize/(1024*1024));
 	}
 
 	return 0;
